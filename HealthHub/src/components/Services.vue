@@ -4,16 +4,16 @@
     </div>
     
       <div class="card-container mb-5">
-        <div class="card">
-          <img class="card-img-top" src="../assets/images/services1.jpg" alt="Card image cap">
+        <router-link :to="{name: 'eyeService'}"><div class="card">
+            <img class="card-img-top" src="../assets/images/services1.jpg" alt="Card image cap">
           <div class="card-header text-center">Your Clear Vision Partner: Expert Ophthalmology Care at HealthHub</div>
           <div class="card-body border rounded">
             <p class="card-text">
                 Experience exceptional eye care with our skilled ophthalmologist. Our specialist is committed to preserving and enhancing your vision through personalized, state-of-the-art treatments. From routine check-ups to advanced surgical procedures, trust us for compassionate eye care.
             </p>
           </div>
-        </div>
-        <div class="card"> 
+        </div></router-link>
+       <router-link :to="{name: 'enService'}"><div class="card"> 
           <img class="card-img-right" src="../assets/images/services2.jpg" alt="Card image cap" height="">
           <div class="card-header text-center">
             Complete EN Care: Your Trusted Otolaryngologist at HealthHub
@@ -23,7 +23,7 @@
               Experience comprehensive care for your ears and nose with our expert otolaryngologist. At HealthHub, our specialist is dedicated to diagnosing and treating a wide range of EN conditions. From hearing issues to sinus disorders, trust us for personalized and advanced EN care.
             </p>
           </div>
-        </div>
+        </div></router-link>
       </div>
 </template>
 
@@ -33,7 +33,7 @@
 
 <style scoped>
 .about {
-    background-color: #003a6b;
+    background-color: #0146ae;
     text-transform: uppercase;
     width: fit-content;
     margin: 50px auto;
@@ -68,15 +68,19 @@
 }
 
 .card-header {
-    background-color: #003a6b;
+    background-color: #0146ae;
     color: #eee;
     font-weight: bold;
 }
 .card-body {
-    border: 1px solid #003a6b;
+    border: 1px solid #0146ae;
 }
 
 .card-text {
     text-align: justify;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

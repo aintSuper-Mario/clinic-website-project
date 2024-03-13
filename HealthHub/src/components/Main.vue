@@ -6,13 +6,14 @@
             Our clinic system integrates advanced technology  prioritizing <br> your well-being 
             through a holistic approach and <br>nurturing healthier lives for everyone we serve. 
           </p>
-          <button>Appointment</button>
-          <button>Consultation</button>
+          <button><router-link :to="{name: 'appointment'}">Appointment</router-link></button>
+          <button><router-link :to="{name: 'consultation'}">Consultation</router-link></button>
         </div>
       </div>
 </template>
 
 <script>
+
 
 </script>
 
@@ -41,7 +42,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width: 140px;
     border: 1px solid transparent;
-    background-color: #003a6b;
+    background-color: #0146ae;
     color: white;
     margin-right: 10px;
     padding: 10px;
@@ -50,5 +51,10 @@
 
 .container button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>

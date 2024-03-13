@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="aboutus">
-      <h1>About us</h1>
+      <h1>ABOUT US</h1>
       <p>
         <span>W</span>elcome to HealthHub, where our mission is to provide
         exceptional healthcare services with a personal touch. Founded on a
@@ -57,7 +57,7 @@
   border-top: 1px solid #eee;
   height: 100%;
   width: 100%;
-  background-color: #003a6b;
+  background-color: #0146ae;
 }
 .aboutus {
   color: white;

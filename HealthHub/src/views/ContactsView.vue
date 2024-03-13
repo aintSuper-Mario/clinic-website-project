@@ -67,7 +67,7 @@ export default {};
   color: white;
   width: 100%;
   height: 100%;
-  background-color: #003a6b;
+  background-color: #0146ae;
   text-align: center;
   border-top: 1px solid white;
   padding: 110px 0;
@@ -88,6 +88,10 @@ export default {};
   width: 300px;
 }
 .media h1 {
+  background: white;
+  border-radius: 4px;
+  padding: 15px 2px;
+  color: #003a6b;
   font-size: 1.8em;
 }
 .media h2 {

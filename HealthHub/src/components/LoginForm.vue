@@ -1,7 +1,7 @@
 <template>
     <div class="form-container">
         <form @submit.prevent="handleSubmit">
-            <h1>Login to HealthHub</h1>
+            <h1>Login to Dashboard</h1>
             <hr>
             <!-- Email -->
             <label >Email: </label>
@@ -11,32 +11,9 @@
             <input type="password" required v-model="password">
             <!-- Validates the password given -->
             <p v-if="passwordError" class="password-error"> {{ passwordError }} </p>
-            <!-- Role -->
-            <label>Role: </label>
-            <select v-model="role">
-                <option value="designer">Web Designer</option>
-                <option value="developer">Web Developer</option>
-            </select>
-            <!-- Skills -->
-            <label>Skills: </label>
-            <input type="text" v-model="tempSkill" @keyup.ctrl="addSkill">
-            <!-- Render skills -->
-            <div class="skills" v-for="skill in skills" :key="skill">
-                <!-- Delete Skill -->
-               <span @dblclick="deleteSkill(skill)"> {{ skill }} </span> 
-            </div> 
-            <!-- error if provided skill is already in the skills array -->
-            <div class="skill-error" v-if="skillsError">
-                {{ skillsError }}
-            </div>
-            <!-- Terms and conditions -->
-            <div class="terms">
-                <input type="checkbox" required v-model="terms">
-                <label>Terms and Conditions</label>
-            </div>
             <!-- Submitting the form -->
             <div class="submit">
-                <button>Create an Account</button>
+                <button class="rounded mt-2">Login</button>
             </div>
           </form>
     </div>
@@ -108,11 +85,11 @@ export default {
     border-top: 1px solid #eee;
     width: 100%;
     height: 100%;
-    background-color: #003a6b;
-    padding: 65px 0;
+    background-color: #0146ae;
+    padding: 80px 0;
 }
 form {
-    width: 600px;
+    width: 500px;
     margin: 0 auto;
     background: white;
     text-align: left;
@@ -122,7 +99,7 @@ form {
 }
 form h1 {
     font-weight: 900;
-    color:#003a6b;
+    color:#0146ae;
     text-align: center;
     font-size: 30px;
 }
@@ -170,11 +147,10 @@ input[type="checkbox"] {
     cursor:pointer;
 }
 button {
-    background: #0b6dff;
+    background: #0146ae;
     border: none;
     padding: 10px 20px;
     color: white;
-    border-radius: 20px;
 }
 button:hover {
     cursor: pointer;

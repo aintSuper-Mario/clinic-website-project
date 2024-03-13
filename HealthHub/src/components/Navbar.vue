@@ -1,4 +1,11 @@
 <script>
+export default {
+    methods: { 
+    refresh() { 
+      location.reload(); 
+    } 
+}
+}
 </script>
 
 <template>
@@ -14,7 +21,7 @@
             <li><router-link :to="{name: 'home'}">Home</router-link></li>
             <li><router-link :to="{name: 'about'}">About</router-link></li>
             <li><router-link :to="{name: 'contacts'}">Contacts</router-link></li>
-            <li><router-link :to="{name: 'login'}"><span>Login</span></router-link></li>
+            <li @click="refresh"><span>Logout</span></li>
         </ul>
     </nav>
 
@@ -22,7 +29,7 @@
 
 <style scoped>
     nav {
-        background-color: #003a6b;
+        background-color: #0146ae;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         padding: 13px;
         display: flex;
